@@ -26,7 +26,7 @@
         <a href={'/upcoming/'+movie.id}>
 
             <div class="imgDiv">
-              <img src={"https://image.tmdb.org/t/p/w500/" + movie.backdrop_path} alt="">
+              <img src={"https://image.tmdb.org/t/p/original/" + movie.backdrop_path} alt="">
             </div>
 
             <div class="details">

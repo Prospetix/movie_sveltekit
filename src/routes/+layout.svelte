@@ -1,7 +1,7 @@
 <script>
 	import { pageStore } from './store.js';
-    import Input from "../component/input.svelte";
-    import Footer from "../component/footer.svelte";
+    import Input from "../component/Input.svelte";
+    import Footer from "../component/Footer.svelte";
     import {fly, scale, fade,blur,crossfade,slide} from "svelte/transition"
 
     import { page } from '$app/stores';
@@ -51,6 +51,7 @@
             </div>
         {/key}
         
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="box" on:click={toggles}>
             <div class="toggle"> </div>
             

@@ -1,7 +1,13 @@
 <script>
+// @ts-nocheck
+
 	import { render } from "../routes/store";
     // import {goto} from "$app/navigator"
     import {fly} from "svelte/transition"
+ // @ts-ignore
+	
+    
+    
  let inputValue = '';
  let active = false;
   let focus=()=>{
@@ -14,7 +20,7 @@
         active=false
     }
   }
-  function submit(params) {
+  function submit() {
     $render++
     console.log($render);
   }

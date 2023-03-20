@@ -1,7 +1,10 @@
 <script>
-    export let movies;
+    /**
+	 * @type {{ data: any; }}
+	 */
+     export let movies;
     console.log(movies);
-    import { pageStore } from '../../../movies/src/routes/store';
+    import { pageStore } from '../routes/store';
     import MovieCard from "./movieCard.svelte";
     import {fly} from "svelte/transition"
 

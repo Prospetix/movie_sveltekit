@@ -1,5 +1,5 @@
 <script>
-    import { pageStore } from '../../../movies/src/routes/store';
+    import { pageStore } from '../routes/store';
     function reset() {
         pageStore.set(2)
     }

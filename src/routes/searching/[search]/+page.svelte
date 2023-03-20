@@ -1,7 +1,11 @@
 <script>
+// @ts-nocheck
+
     export let data;
     import MovieCard from "../../../component/movieCard.svelte";
     let details = data.data.results;
+    // @ts-ignore
+    // @ts-ignore
     import { render } from "../../store";
     // console.log(data.data.results);
     import {fly} from "svelte/transition"
