@@ -1,14 +1,16 @@
 <script>
-	import { onMount } from 'svelte';
-  export let up
-  console.log("up", up)
-  import { Pagination} from "swiper";
-  import { register } from 'swiper/element/bundle';
-  import "swiper/css";
-  import "swiper/css/pagination";
-  onMount(()=>{
-    register()
-  })
+	// import { onMount } from 'svelte';
+  export let up;
+  let upcome = up;
+  // let upComes = upCome
+  console.log(up);
+  console.log("upCome", up)
+
+  // import "swiper/css";
+  // import "swiper/css/pagination";
+  // onMount(()=>{
+  //   register()
+  // })
 
   
 </script>
@@ -16,13 +18,9 @@
 
 <div class="cont">
   <h1>upcoming movies</h1>
-  <swiper-container class="mySwiper resize" slides-per-view={1} loop={true} css-mode={true} space-between="50" navigation="true" effect='slide' autoplay={true}
-  
-  modules={[Pagination]}
-  
-    >
+  <swiper-container class="mySwiper resize" slides-per-view={1} loop={true} css-mode={true} space-between="50" navigation="true" effect='slide' autoplay="true">
     
-    {#each up as movie (movie.id)}
+    {#each upcome as movie (movie.id)}
         <swiper-slide class="swipe">
 
         <a href={'/upcoming/'+movie.id}>
@@ -73,7 +71,7 @@
   }
   /* .cont h2{
     margin: auto;
-    text-transform: uppercase;
+    text-transform: upComepercase;
     margin-bottom: 20px;
   } */
   .details{
