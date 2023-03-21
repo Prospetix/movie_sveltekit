@@ -52,8 +52,8 @@
         {/key}
         
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div class="box" on:click={toggles}>
-            <div class="toggle"> </div>
+        <div class="box" class:togg={show} on:click={toggles}>
+            <div class="toggle" > </div>
             
         </div>
     </nav>
@@ -90,6 +90,7 @@
         align-items: center;
         cursor: pointer;
         display: none;
+        transition: linear 1s all;
     }
    .toggle{
         width: 30px;
@@ -97,6 +98,7 @@
         background-color: #ffffff;
         position: absolute;
         cursor: pointer;
+        transition: linear 1s all;
    }
    .toggle::after{
         position: absolute;
@@ -105,6 +107,7 @@
         height: 3px;
         background-color: white;
         top: 10px;
+        transition: linear 1s all;
    }
    .toggle::before{
         position: absolute;
@@ -113,7 +116,29 @@
         height: 3px;
         background-color: white;
         top: -10px;
+        transition: linear 1s all;
    }
+   .box.togg {
+        border: 2px solid rgb(40, 161, 46);
+        border-radius: 50%;
+        border-block-start: #ffffff;
+        transition: linear 1s all;
+   }
+   .box.togg .toggle{
+        opacity: 1;
+        background-color: rgb(15, 15, 15);
+        border-radius: 50%;
+        width: 12px;
+        transition: linear 1s all;
+    }
+    .box.togg .toggle::after{
+        transform: rotate(140deg) translateY(13px);
+        transition: linear 1s all;
+    }
+    .box.togg .toggle::before{
+        transform: rotate(-140deg) translateY(-13px);
+        transition: linear 1s all;
+    }
    .name{
     font-size: 1.4rem;
    }
@@ -171,6 +196,7 @@
         cursor: pointer;
        
     }
+   
     
     
     @media (max-width: 600px){
