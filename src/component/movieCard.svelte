@@ -1,4 +1,5 @@
 <script>
+    // @ts-ignore
     export let movie
     
 </script>

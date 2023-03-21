@@ -25,12 +25,12 @@
     </div>
 
     <div class="terms">
-      <div>
+      <div class="links">
             <a on:click={reset} href="/">terms</a>
             <a on:click={reset} href="/">policy</a>
             <a on:click={reset} href="/">enquiries</a>
       </div>
-      <a on:click={reset} href="/"><div class="name">movies.<span>ED</span></div></a>
+      <a on:click={reset} href="/"><div class="names">movies.<span>ED</span></div></a>
       <p>&copy;2022 all right resevered</p>
     </div>
 
@@ -85,6 +85,29 @@
         display: flex;
         color:white;
         justify-content: space-around;
+    }
+
+    @media (max-width: 500px){
+        .names{
+            font-size: 1.1rem;
+            position: absolute;
+            top: -37px;
+            right: 39%;
+
+        }
+        .terms{
+            position: relative;
+        }
+        .terms .links {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            left: 30px;
+        }
+        .terms p{
+            position: absolute;
+            right: 20px;
+        }
     }
     
 </style>
