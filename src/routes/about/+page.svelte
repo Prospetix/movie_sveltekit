@@ -3,7 +3,7 @@
 
 <main>
     <div>movies.<span>ED</span></div>
-    <h3>movies.ED is one place you find all classics movies both new and old. we offer high quality of movie donloads.
+    <h3>movies.ED is one place you find all classics movies both new and old. we offer high quality of movie downloads.
         we give best search results, our user interface is so matured and cool, we have categories of movies.
 
     </h3>

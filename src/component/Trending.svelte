@@ -18,7 +18,7 @@
 
 <div class="cont">
   <h1>upcoming movies</h1>
-  <swiper-container class="mySwiper resize" slides-per-view={1} loop={true} space-between="50" navigation="true" autoplay={true}>
+  <swiper-container class="mySwiper resize" slides-per-view={1} loop={true} space-between="50" navigation="true" autoplay="true">
     
     {#each upcome as movie (movie.id)}
         <swiper-slide class="swipe">
