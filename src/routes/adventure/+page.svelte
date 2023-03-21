@@ -18,6 +18,6 @@
         height: 100vh;
     }
     img{
-        width: 30rem;
+        width: 20rem;
     }
 </style>
