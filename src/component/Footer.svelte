@@ -102,14 +102,14 @@
             display: flex;
             justify-content: space-around;
             position: absolute;
-            left: 20px;
+            left: 5px;
         }
         .terms .links a {
             margin-right: 7px;
         }
         .terms p{
             position: absolute;
-            right: 20px;
+            right: 5px;
             word-spacing: 4px;
         }
     }
